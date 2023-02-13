@@ -9,15 +9,13 @@
 <body>
    
 
-   @foreach ($comics as $comic)
-   <tbody>
-       <tr>
-           <td>{{ $comic->id }}</td>
-           <td>{{ $comic->title }}</td>
-           <td>{{ $comic->price }}</td>
-           <td>{{ $comic->sale_date }}</td>
-       </tr>
-   </tbody>
-   @endforeach
+
+
+      @foreach ($comics as $comic)
+
+          <h1>
+            {{$comic->title}}
+          </h1>
+      @endforeach
 </body>
 </html>
