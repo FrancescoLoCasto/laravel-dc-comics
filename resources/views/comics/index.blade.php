@@ -29,6 +29,7 @@
                <td>{{ $comic->title }}</td>
                <td>{{ $comic->price }}</td>
                <td>{{ $comic->sale_date }}</td>
+               
             </tr>
       </tbody>
       @endforeach 
