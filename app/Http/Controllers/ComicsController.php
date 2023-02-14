@@ -36,7 +36,18 @@ class ComicsController extends Controller
      */
     public function store(Request $request)
     {
-        dd($request->all());
+        $dataIns = $request->all();
+        $newComic = new Comic();
+        $newComic->thumb =$dataIns['thumb'];
+        $newComic->title =$dataIns['title'];
+        $newComic->description =$dataIns['description'];
+        $newComic->price =$dataIns['price'];
+        $newComic->series =$dataIns['series'];
+        $newComic->sale_date =$dataIns['sale_date'];
+        $newComic->type =$dataIns['type'];
+        $newComic->save();
+
+        return redirect()->route('create.show', $newComic);
     }
 
     /**
