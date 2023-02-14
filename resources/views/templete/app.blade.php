@@ -17,6 +17,11 @@
 
 <body>
 
+
+<main>
+   @yield('principal-content')
+</main>
+
 </body>
 
 </html>
