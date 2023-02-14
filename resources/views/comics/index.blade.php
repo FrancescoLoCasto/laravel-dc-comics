@@ -4,6 +4,8 @@
 
 @section('principal-content')
 
+
+
    <table class="table">
       <thead>
             <tr>
@@ -17,10 +19,13 @@
       @foreach ($comics as $comic)
       <tbody>
             <tr>
-               <td>{{ $comic->id }}</td>
+               <td>{{ $comic->id }} </td>
                <td>{{ $comic->title }}</td>
                <td>{{ $comic->price }}</td>
                <td>{{ $comic->sale_date }}</td>
+               <td>
+                  <a class="btn" href="{{routes('comics.show',$comic->id)}}">Reveal comics</a>
+               </td>
 
             </tr>
       </tbody>

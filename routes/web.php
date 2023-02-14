@@ -16,4 +16,7 @@ use App\Http\Controllers\ComicsController as ComicsController;
 */
 
 
-Route::get('/', [ComicsController::class, 'index'] )->name('index');
+// Route::get('/', [ComicsController::class, 'index'] )->name('index');
+Route::resource('comics',ComicsController::class);
+
+
