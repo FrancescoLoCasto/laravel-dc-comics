@@ -47,7 +47,7 @@ class ComicsController extends Controller
         $newComic->type =$dataIns['type'];
         $newComic->save();
 
-        return redirect()->route('create.show', $newComic);
+        return redirect()->route('comics.show', $newComic);
     }
 
     /**

@@ -5,7 +5,7 @@
 @section('principal-content')
 
 
-<form action="{{ route('create.store')}}" method="POST">
+<form action="{{ route('comics.store')}}" method="POST">
    @csrf
    <div class="mb-3">
       <label class="form-label">
