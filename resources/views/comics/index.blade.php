@@ -5,6 +5,10 @@
 @section('principal-content')
 
 
+   <div class="col-12">
+      <a href="{{route('create.create')}}" class="btn btn-danger">Create new Comics!</a>
+   </div>
+
    <table class="table">
       <thead>
             <tr>

@@ -20,3 +20,7 @@ Route::get('/', [ComicsController::class, 'index'] )->name('index');
 Route::get('/comics/{id}', [ComicsController::class, 'show'])->name('comics.show');
 
 
+Route::resource('/comics/create', ComicsController::class);
+
+
+
