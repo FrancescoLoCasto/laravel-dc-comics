@@ -5,7 +5,6 @@
 @section('principal-content')
 
 
-
    <table class="table">
       <thead>
             <tr>
@@ -24,7 +23,7 @@
                <td>{{ $comic->price }}</td>
                <td>{{ $comic->sale_date }}</td>
                <td>
-                  <a class="btn" href="{{route('comics.show',$comic->id)}}">Reveal comics</a>
+                  <a class="btn btn-primary" href="{{route('comics.show',$comic->id)}}">Reveal comics</a>
                </td>
 
             </tr>

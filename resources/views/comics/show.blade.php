@@ -2,10 +2,11 @@
 
 @section('principal-content')
 
-<div class="container">
+
+<div class="container my-container">
    <div class="row">
       <div class="col-4 text-center ">
-         <div class="card my-card">
+         <div class="card my-card " style="width: 20rem; margin-left: 30rem;">
             <img class="img-fluid" src="{{$comic->thumb}}" alt="">
             <h2>
                {{ $comic->title }}

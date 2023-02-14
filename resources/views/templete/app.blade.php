@@ -17,6 +17,8 @@
 
 <body>
 
+    
+
 
 <main>
    @yield('principal-content')
