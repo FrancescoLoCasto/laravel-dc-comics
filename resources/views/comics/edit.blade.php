@@ -4,7 +4,6 @@
 
 @section('principal-content')
 
-@dump($comic)
 
 <form action="{{ route('comics.update', $comic->id)}}" method="POST">
    @method('PUT')
