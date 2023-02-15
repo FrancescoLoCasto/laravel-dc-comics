@@ -57,7 +57,7 @@
       <input type="text" class="form-control" name="type" value="{{$comic->type}}">
    </div>
 
-      <button type="submit" class="btn btn-warning">Create new Comics!</button>
+      <button type="submit" class="btn btn-warning">Edit your Comics!</button>
  </form>
 
 @endsection
