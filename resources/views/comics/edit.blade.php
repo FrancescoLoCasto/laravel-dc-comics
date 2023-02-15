@@ -6,7 +6,7 @@
 
 @dump($comic)
 
-<form action="{{ route('comics.store')}}" method="POST">
+<form action="{{ route('comics.update', $comic->id)}}" method="POST">
    @method('PUT')
    @csrf
    <div class="mb-3">
