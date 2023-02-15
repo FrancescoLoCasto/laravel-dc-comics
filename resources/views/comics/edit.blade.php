@@ -4,8 +4,9 @@
 
 @section('principal-content')
 
+@dump($comic)
 
-<form action="{{ route('comics.update')}}" method="POST">
+<form action="{{ route('comics.store')}}" method="POST">
    @csrf
    <div class="mb-3">
       <label class="form-label">
