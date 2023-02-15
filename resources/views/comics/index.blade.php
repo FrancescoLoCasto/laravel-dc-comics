@@ -30,6 +30,15 @@
                   <a class="btn btn-primary" href="{{route('comics.show',$comic->id)}}">Reveal comics</a>
                   <a class="btn btn-warning" href="{{route('comics.edit',$comic->id)}}">Edit comics</a>
                </td>
+               <td>
+                  <form action="{{route('comics.destroy', $comic->id)}}" method="POST" >
+                     @csrf
+                     @method('DELETE')
+                     <button class="btn btn-danger">
+                        Delete comics!
+                     </button>
+                  </form>
+               </td>
             </tr>
       </tbody>
       @endforeach 
