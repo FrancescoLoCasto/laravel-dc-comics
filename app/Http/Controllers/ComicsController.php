@@ -38,13 +38,13 @@ class ComicsController extends Controller
     {
 
         $request->validate([
-            'title'=> 'required',
-            'description'=> 'required',
+            'title'=> 'required|min:2|max:100',
+            'description'=> 'required|min:2|max:200',
             'thumb'=> 'required',
             'price'=> 'required',
-            'series'=> 'required',
+            'series'=> 'required|min:2|max:200',
             'sale_date'=> 'required',
-            'type'=> 'required',
+            'type'=> 'required|min:2|max:200',
         ]);
 
         $dataIns = $request->all();
