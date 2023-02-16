@@ -52,8 +52,8 @@ class ComicsController extends Controller
             'description.required'=> 'Metti la tua descrizione',
             'thumb.required'=> 'Importa il link della tua cover',
             'price.required'=> 'Dai un prezzo al tuo fumetto',
-            'serie.required'=> 'Numero di serie del fumetto',
-            'sale_date.required'=> 'Data di Vendita',
+            'series.required'=> 'Numero di serie del fumetto',
+            'sale_date.required'=> 'Inserisci la data di Vendita',
             'type.required'=> 'Inserisci il tipo di fumetto'
         ]
     );
