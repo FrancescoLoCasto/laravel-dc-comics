@@ -12,21 +12,21 @@
       <label class="form-label">
          Title
       </label>
-      <input type="text" class="form-control" name="title" value="{{$comic->title}}">
+      <input type="text" class="form-control" name="title" value="{{old('title') ?? $comic->title}}">
    </div>
 
    <div class="mb-3">
       <label class="form-label">
          description
       </label>
-      <input type="text" class="form-control" name="description" value="{{$comic->description}}">
+      <input type="text" class="form-control" name="description" value="{{old('description') ?? $comic->description}}">
    </div>
 
    <div class="mb-3">
       <label class="form-label">
          price
       </label>
-      <input type="text" class="form-control" name="price" value="{{$comic->price}}">
+      <input type="text" class="form-control" name="price" value="{{old('description') ?? $comic->price}}">
    </div>
 
    <div class="mb-3">
