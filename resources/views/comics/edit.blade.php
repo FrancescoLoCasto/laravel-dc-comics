@@ -26,35 +26,35 @@
       <label class="form-label">
          price
       </label>
-      <input type="text" class="form-control" name="price" value="{{old('description') ?? $comic->price}}">
+      <input type="text" class="form-control" name="price" value="{{old('price') ?? $comic->price}}">
    </div>
 
    <div class="mb-3">
       <label class="form-label">
          thumb
       </label>
-      <input type="text" class="form-control" name="thumb" value="{{$comic->thumb}}">
+      <input type="text" class="form-control" name="thumb" value="{{old('thumb') ?? $comic->thumb}}">
    </div>
 
    <div class="mb-3">
       <label class="form-label">
          series
       </label>
-      <input type="text" class="form-control" name="series" value="{{$comic->series}}">
+      <input type="text" class="form-control" name="series" value="{{old('series') ?? $comic->series}}">
    </div>
 
    <div class="mb-3">
       <label class="form-label">
          sale_date
       </label>
-      <input type="text" class="form-control" name="sale_date" value="{{$comic->sale_date}}">
+      <input type="text" class="form-control" name="sale_date" value="{{old('sale_date') ?? $comic->sale_date}}">
    </div>
 
    <div class="mb-3">
       <label class="form-label">
          type
       </label>
-      <input type="text" class="form-control" name="type" value="{{$comic->type}}">
+      <input type="text" class="form-control" name="type" value="{{old('type') ?? $comic->type}}">
    </div>
 
       <button type="submit" class="btn btn-warning">Edit your Comics!</button>
