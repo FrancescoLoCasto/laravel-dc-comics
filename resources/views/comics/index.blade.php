@@ -22,6 +22,7 @@
                <th scope="col">Sale Date</th>
                <th scope="col"></th>
                <th scope="col"></th>
+               
             </tr>
       </thead>
 
