@@ -36,6 +36,11 @@ class ComicsController extends Controller
      */
     public function store(Request $request)
     {
+
+        $request->validate([
+            
+        ]);
+
         $dataIns = $request->all();
         $newComic = new Comic();
         $newComic->thumb =$dataIns['thumb'];
