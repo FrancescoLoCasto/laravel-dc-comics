@@ -38,7 +38,7 @@ class ComicsController extends Controller
     {
 
         $request->validate([
-            
+            'title'=> 'required',
         ]);
 
         $dataIns = $request->all();
